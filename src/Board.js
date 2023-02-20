@@ -1,19 +1,20 @@
 import Cell from './Cell'
+import { useSelector } from 'react-redux'
 
 function Board() {
 
-  const board = [
-    ['X', 'O', null],
-    [null, null, null],
-    [null, null, null],
-  ]
+  const board = useSelector(state => state.board.tablero)
 
   return (
     <div className="board">
       {
         board.map((row, i) => {
           return row.map((cell, j) => {
-            return <Cell contenido={cell} key={i + '-' + j} />
+            return (
+              <Cell contenido={cell} key={i + '-' + j}
+                    fila={i} columna={j}
+              />
+            )
           })
         })
       }
