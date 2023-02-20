@@ -1,8 +1,12 @@
 import Board from "./Board"
+import { store } from "./features/store"
+import { Provider } from "react-redux"
 
 function App() {
   return (
-    <Board/>
+    <Provider store={store}>
+      <Board/>
+    </Provider>
   )
 }
 
