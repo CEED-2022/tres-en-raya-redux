@@ -5,12 +5,12 @@ import computerMove from './lib/server'
 const root = ReactDOM.createRoot(document.getElementById("app"))
 root.render(<App />)
 
-async function foo() {
-  const board = [
-    [null, null, null],
-    [null, null, null],
-    [null, null, null],
-  ]
-  await computerMove(board)
-}
-foo().then(data => console.log)
+// async function foo() {
+//   const board = [
+//     [null, null, null],
+//     [null, null, null],
+//     [null, null, null],
+//   ]
+//   await computerMove(board)
+// }
+// foo().then(data => console.log)

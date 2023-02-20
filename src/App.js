@@ -1,6 +1,8 @@
+import Board from "./Board"
+
 function App() {
   return (
-    <p>Your App here</p>
+    <Board/>
   )
 }
 
